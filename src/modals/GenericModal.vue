@@ -59,7 +59,6 @@ export default {
         return;
       }
 
-      console.log(this.canClose);
       this.$emit('close');
     }
   },

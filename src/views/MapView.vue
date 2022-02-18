@@ -5,7 +5,7 @@
         @markerClick="handleMarkerClick"
     />
 
-    <div style="z-index: 1000" class="absolute left-8 bottom-8">
+    <div style="z-index: 1000" class="absolute left-4 bottom-4 xl:left-8 xl:bottom-8">
       <DefaultButton to="/">Teruggaan</DefaultButton>
     </div>
 
@@ -32,9 +32,7 @@ export default {
       this.selectedMarker = $marker;
     },
     handleModalClose() {
-      console.log(this.selectedMarker);
       this.selectedMarker = null;
-      console.log(this.selectedMarker);
     }
   },
   created() {

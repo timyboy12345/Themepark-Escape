@@ -39,8 +39,7 @@ export default {
     }
   },
   created() {
-    StarService.getData(1).then((data) => {
-      console.log(data);
+    StarService.getData(this.marker.id).then((data) => {
       this.starData = data;
     })
   }
